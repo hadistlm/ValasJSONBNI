@@ -22,7 +22,8 @@ class index
      */
     public function exec()
     {
-    	echo GetValasBNI::run();
+    	// === USD | SGD | AUD | EUR | GBP | CAD | CHF | HKD | JPY | SAR  === //
+    	echo GetValasBNI::run('all');
     }
 }
 

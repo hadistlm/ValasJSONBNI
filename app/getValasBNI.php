@@ -11,7 +11,7 @@ class GetValasBNI
 
         if ( $valas != 'all' ) {
             $selected          = strtoupper($valas);
-            $return[$selected] = $data->USD;
+            $return[$selected] = $data->$selected;
         }else {
             $return = $data;
         }
