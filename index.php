@@ -22,8 +22,13 @@ class index
      */
     public function exec()
     {
-    	// === USD | SGD | AUD | EUR | GBP | CAD | CHF | HKD | JPY | SAR  === //
-    	echo GetValasBNI::run('all');
+    	// === || default = BNI | syariah = BNI Syariah || === //
+    	$vendor = 'syariah';
+        
+        // === all | USD | SGD | AUD | EUR | GBP | CAD | CHF | HKD | JPY | SAR  === //
+    	$kurs   = 'all';
+
+        echo GetValasBNI::run($vendor, $kurs);
     }
 }
 
